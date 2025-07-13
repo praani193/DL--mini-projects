@@ -1,0 +1,12 @@
+import cv2
+img = cv2.imread("a.png")
+cv2.imwrite("My_Logo.png",img)
+print(img.shape)
+print(img.size)
+print(img.dtype)
+g = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+cv2.imwrite("ga.jpg",g)
+cv2.imshow("Original",img)
+cv2.imshow("Gray",g)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
